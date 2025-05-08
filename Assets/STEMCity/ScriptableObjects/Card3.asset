@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2cd6a2c4f430754428cba9dcf2bc1600, type: 3}
+  m_Name: Card3
+  m_EditorClassIdentifier: 
+  title: Emergency
+  description: A massive chemical spill has ocurred in one of the laboratories
+  leftChoiceText: Expend funds to fix and update the safety measures of the laboratory
+  leftEffect:
+    educationChange: 0
+    scienceChange: 10
+    economyChange: -30
+    approvalChange: 10
+    industryChange: 10
+  rightChoiceText: Expend funds to fix the laboratory
+  rightEffect:
+    educationChange: 0
+    scienceChange: 0
+    economyChange: -20
+    approvalChange: 10
+    industryChange: 0
