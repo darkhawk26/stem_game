@@ -841,7 +841,7 @@ GameObject:
   - component: {fileID: 1694084721}
   - component: {fileID: 1694084720}
   m_Layer: 5
-  m_Name: Congrats
+  m_Name: LoseMessage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -886,7 +886,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Congratulations on achieving 100 points in Science!
+  m_text: You have let your Approval go below 0, you have lost.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6f977300148fed54fb144012b50305fd, type: 2}
   m_sharedMaterial: {fileID: 1835017840395270223, guid: 6f977300148fed54fb144012b50305fd, type: 2}
