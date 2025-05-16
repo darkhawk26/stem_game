@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2cd6a2c4f430754428cba9dcf2bc1600, type: 3}
+  m_Name: VRLearningInitiative
+  m_EditorClassIdentifier: 
+  title: VR Learning Initiative
+  description: Your advisors propose using VR to boost STEM engagement in schools
+  leftChoiceText: Launch the initiative
+  leftEffect:
+    educationChange: 12
+    scienceChange: 8
+    economyChange: -10
+    approvalChange: 0
+    industryChange: 0
+  rightChoiceText: Stick to books
+  rightEffect:
+    educationChange: -6
+    scienceChange: 0
+    economyChange: 10
+    approvalChange: 0
+    industryChange: 0

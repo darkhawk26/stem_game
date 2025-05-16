@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class EventManager : MonoBehaviour
 {
@@ -89,6 +90,40 @@ public class EventManager : MonoBehaviour
     {
         statsManager.ApplyEffect(effect);
         UpdateStatTexts();
+        CheckGameState();
         LoadRandomCard();
+    }
+
+    void CheckGameState()
+    {
+        float science = statsManager.scienceSlider.value;
+        float education = statsManager.educationSlider.value;
+        float economy = statsManager.economySlider.value;
+        float industry = statsManager.industrySlider.value;
+        float approval = statsManager.approvalSlider.value;
+
+        // Win condition: science >= 100
+        if (science >= 100)
+        {
+            SceneManager.LoadScene("WinScienceScene");
+        }
+
+        // Lose condition: any stat <= 0
+        if (education <= 0)
+        {
+            SceneManager.LoadScene("LoseEducationScene");
+        }
+        if (economy <= 0)
+        {
+            SceneManager.LoadScene("LoseEconomyScene");
+        }
+        if (industry <= 0)
+        {
+            SceneManager.LoadScene("LoseIndustryScene");
+        }
+        if (approval <= 0)
+        {
+            SceneManager.LoadScene("LoseApprovalScene");
+        }
     }
 }

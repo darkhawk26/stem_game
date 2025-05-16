@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2cd6a2c4f430754428cba9dcf2bc1600, type: 3}
+  m_Name: OpenSourceResearchPolicy
+  m_EditorClassIdentifier: 
+  title: Open Source Research Policy
+  description: Scientists want all government-funded research to be open source
+  leftChoiceText: Make research open
+  leftEffect:
+    educationChange: 5
+    scienceChange: 10
+    economyChange: -5
+    approvalChange: 3
+    industryChange: -5
+  rightChoiceText: Maintain restricted access
+  rightEffect:
+    educationChange: 0
+    scienceChange: -5
+    economyChange: 5
+    approvalChange: -3
+    industryChange: 5
